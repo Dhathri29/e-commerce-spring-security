@@ -4,20 +4,30 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.webencyclop.demo.model.User;
 import com.webencyclop.demo.service.UserService;
+
 
 @Controller
 public class AuthenticationController {
 
 	@Autowired
 	UserService userService;
+	
+	
+	@Autowired
+	ProductService productService;
+	
 
 	@RequestMapping(value = { "/login" }, method = RequestMethod.GET)
 	public ModelAndView login() {
@@ -27,6 +37,7 @@ public class AuthenticationController {
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	@ResponseBody
 	public ModelAndView register() {
 		ModelAndView modelAndView = new ModelAndView();
 		User user = new User();
@@ -69,14 +80,18 @@ public class AuthenticationController {
 		modelAndView.setViewName("register");
 		return modelAndView;
 	}
+	
+	/*
+	 * @GetMapping("/all") public String getAllProducts(Model model) {
+	 * model.addAttribute("products",productService.showAllProducts());
+	 * 
+	 * return "home"; }
+	 * 
+	 * @GetMapping("/{productId}") public String getProductById(Model
+	 * model, @PathVariable("productId") String productId) {
+	 * 
+	 * model.addAttribute("product",productService.getProductById(productId));
+	 * return "product"; }
+	 */
 }
-
-
-
-
-
-
-
-
-
 

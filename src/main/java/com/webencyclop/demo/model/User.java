@@ -33,7 +33,7 @@ public class User {
 	@NotNull(message="Last name is compulsory")
 	@Column(name = "last_name")
 	private String lastName;
-
+    
 	@NotNull(message="Email is compulsory")
 	@Email(message = "Email is invalid")
 	@Column(name = "email")
