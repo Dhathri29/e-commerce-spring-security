@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
- welcome admin
+ welcome admin to the website
 </body>
 </html>
