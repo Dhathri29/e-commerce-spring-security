@@ -1,13 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-
 <head>
+<meta charset="ISO-8859-1">
 <title>Login</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body style="background-color:#ededed;">    
 	<div style="background-color:#337ab7;height:50px;"></div>
 	<div class="container-fluid">
@@ -28,5 +29,6 @@
 		    </form>
 		</div>
 	</div>
+
 </body>
 </html>

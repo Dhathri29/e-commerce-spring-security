@@ -24,11 +24,6 @@ public class AuthenticationController {
 	@Autowired
 	UserService userService;
 	
-	
-	@Autowired
-	ProductService productService;
-	
-
 	@RequestMapping(value = { "/login" }, method = RequestMethod.GET)
 	public ModelAndView login() {
 		ModelAndView modelAndView = new ModelAndView();
@@ -81,17 +76,6 @@ public class AuthenticationController {
 		return modelAndView;
 	}
 	
-	/*
-	 * @GetMapping("/all") public String getAllProducts(Model model) {
-	 * model.addAttribute("products",productService.showAllProducts());
-	 * 
-	 * return "home"; }
-	 * 
-	 * @GetMapping("/{productId}") public String getProductById(Model
-	 * model, @PathVariable("productId") String productId) {
-	 * 
-	 * model.addAttribute("product",productService.getProductById(productId));
-	 * return "product"; }
-	 */
+	
 }
 
