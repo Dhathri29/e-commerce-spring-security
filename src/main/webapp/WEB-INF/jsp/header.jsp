@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>YRRHELP</title>
+  <title>:: SHOP ::</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="container text-center">
-    <h1>Welcome to YRR Store</h1>      
+    <h1>Welcome to E commerce Website</h1>      
     <p>Browse all our awesome products</p>
   </div>
 

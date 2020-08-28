@@ -1,6 +1,5 @@
 package com.webencyclop.demo.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -27,8 +26,19 @@ public class Product {
 
 	@NotNull
 	private double price;
+	
+	@NotNull
+	private String image;
 
 	
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
 
 	public String getId() {
 		return id;
@@ -70,14 +80,16 @@ public class Product {
 		this.price = price;
 	}
 
+	
 	public Product(String id, @NotNull String name, @NotNull String description, @NotNull String seller,
-			@NotNull double price) {
+			@NotNull double price, @NotNull String image) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.seller = seller;
 		this.price = price;
+		this.image = image;
 	}
 
 	public Product() {
